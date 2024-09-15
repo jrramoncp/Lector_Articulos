@@ -33,7 +33,8 @@ Este proyecto es un lector de noticias en línea desarrollado con Python. Permit
 
 ## Contribuir
 
-Si quieres contribuir al proyecto, crea un fork del repositorio y envía un pull request con tus mejoras. 
+Si quieres contribuir al proyecto, crea un fork del repositorio y envía un pull request con tus mejoras.
+Toda sugerencia o mejora es bienvenida
 
 ## Licencia
 
