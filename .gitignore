@@ -1,0 +1,6 @@
+# Ignorar archivos de texto generados por el proyecto
+*.txt 
+
+# Ignorar ficheros de audio en formato mp3 generados por el proyecto
+
+*.mp3
