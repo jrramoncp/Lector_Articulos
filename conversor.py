@@ -1,14 +1,29 @@
 from gtts import gTTS # Modulo traductor a voz
 from newspaper import Article # Modulo para trabajar con noticias
+import validators
 
-url = input("Ingresa una URL de una noticia: ") # Pide la url de la noticía
 
-def crear_fichero():
+url = input("Introduce una URL de una noticia: ")
+
+
+
+url_check = False
+while url_check == False:
+    if "https" not in url:
+            print("Tienes que introducir una URL válida")
+            url = input("Introduce una URL de una noticia: ")
+    else:
+        url_check = True
+
+    
+
+
+def crear_fichero(url):
     '''
     Una funcion, que lee, y crea un fichero.txt formateado según el articulo que le hayamos 
     introducido en la url
-    '''
-
+    '''   
+   
     article = Article(url)
     article.download() # Descarga la noticia
     article.parse() # Formatea la noticia
@@ -38,6 +53,8 @@ def leer_fichero():
     articulo.close # Cierra el fichero
 
 
-    
-crear_fichero()
+
+
+
+crear_fichero(url)
 leer_fichero()
