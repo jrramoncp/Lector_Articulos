@@ -1,7 +1,5 @@
 from gtts import gTTS # Modulo traductor a voz
 from newspaper import Article # Modulo para trabajar con noticias
-import validators
-
 
 url = input("Introduce una URL de una noticia: ")
 
